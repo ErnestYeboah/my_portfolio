@@ -1,0 +1,84 @@
+.hero_section {
+  padding-inline: var(--padding);
+  align-items: center;
+  height: 90vh;
+
+  @media (width > 992px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    .title_span {
+      color: var(--accent-color);
+      margin-left: 250px;
+    }
+
+    & p {
+      width: 60ch;
+    }
+  }
+
+  img {
+    clip-path: polygon(11% 0%, 100% 0%, 85% 100%, 0% 100%);
+    width: 90%;
+    height: 70vh;
+    object-position: top;
+  }
+}
+
+.chips {
+  > * {
+    background-color: var(--alt-primary-color);
+    padding: 0.3rem 0.5rem;
+    border-radius: 10px;
+    font-size: 0.9rem;
+  }
+}
+
+.social_link {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.shapedividers_com-6349::before {
+  background-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.278 3.62" preserveAspectRatio="none"><path d="M35.278.092S8.238.267 0 3.62V.092z" opacity=".2" fill="%23f3f4f6"/><path d="M35.278.092S8.238.246 0 3.194V.092z" opacity=".2" fill="%23f3f4f6"/><path d="M35.278.092S8.238.223 0 2.738V.092zM35.278.092H0V0h35.278z" fill="%23f3f4f6"/></svg>');
+}
+
+.shapedividers_com-9634::before {
+  background-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.278 3.62" preserveAspectRatio="none"><path d="M35.278.092S8.238.267 0 3.62V.092z" opacity=".2" fill="%23EFEFEF"/><path d="M35.278.092S8.238.246 0 3.194V.092z" opacity=".2" fill="%23ffffff"/><path d="M35.278.092S8.238.223 0 2.738V.092zM35.278.092H0V0h35.278z" fill="%23ffffff"/></svg>');
+}
+
+.shapedividers_com-9634,
+.shapedividers_com-6349 {
+  overflow: hidden;
+  position: relative;
+}
+.shapedividers_com-9634::before,
+.shapedividers_com-6349::before {
+  content: "";
+  font-family: "shape divider from ShapeDividers.com";
+  position: absolute;
+  z-index: 3;
+  pointer-events: none;
+  background-repeat: no-repeat;
+  bottom: -0.1vw;
+  left: -0.1vw;
+  right: -0.1vw;
+  top: -0.1vw;
+  background-size: 100% 90px;
+  background-position: 50% 0%;
+}
+
+@media (min-width: 2100px) {
+  .shapedividers_com-9634::before,
+  .shapedividers_com-6349::before {
+    background-size: 100% calc(2vw + 90px);
+  }
+}
+
+footer {
+  & .gmail_link {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+  }
+}

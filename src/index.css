@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nosifer&display=swap");
+@import "tailwindcss";
+
+:root {
+  --header_font: "Inter", sans-serif;
+  --p-font: "Google Sans", sans-serif;
+  --primary-color: white;
+  --alt-primary-color: #f3f4f6;
+  --accent-color: #15803d;
+  --text-color: #2e2e2e;
+  --padding-min: 1rem;
+  --padding: 10cqi;
+  --radius: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--primary-color);
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--header_font);
+}
+
+a {
+  text-decoration: none;
+  font-family: var(--p-font);
+}
+
+p {
+  font-size: 1.2rem;
+  font-family: var(--p-font);
+  color: var(--text-color);
+}
+
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 1;
+}
+
+.navbar {
+  a {
+    font-size: 1.1rem;
+    position: relative;
+    display: block;
+
+    &:hover {
+      --scale: 1;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      border-radius: var(--radius);
+      background: var(--accent-color);
+      bottom: -4px;
+      scale: var(--scale, 0) 1;
+      transform-origin: left;
+      transition: 200ms linear;
+    }
+  }
+}
