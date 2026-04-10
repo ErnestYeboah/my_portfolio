@@ -46,7 +46,7 @@ const About = () => {
           <div>
             <figure>
               <img
-                src="/public/images/profile.png"
+                src="/images/profile.png"
                 className="h-[inherit] object-top"
                 alt=""
               />
