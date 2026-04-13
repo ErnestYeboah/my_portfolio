@@ -9,8 +9,9 @@
   --accent-color: #15803d;
   --text-color: #2e2e2e;
   --padding-min: 1rem;
-  --padding: 10cqi;
+  --padding: clamp(4rem, 10vw, 10cqi);
   --radius: 10px;
+  --heading-size: clamp(2rem, 6vw, 3.75rem);
 }
 
 * {
@@ -20,6 +21,10 @@
 body {
   background-color: var(--primary-color);
   overflow-x: hidden;
+}
+
+h2 {
+  font-size: var(--heading-size);
 }
 
 h1,

@@ -30,10 +30,10 @@ const Home = () => {
       <Navbar />
       <div className="hero_section">
         <div>
-          <h2 className="text-4xl max-[992px]:text-center font-medium my-4 ">
+          <h1 className="text-4xl max-[992px]:text-center font-medium my-4 ">
             FULLSTACK DEVELOPER & <br />{" "}
             <span className="title_span">MOBILE DEVELOPER</span>
-          </h2>
+          </h1>
           <p>
             I build clean, user-friendly, and performant web applications and
             also mobile applications using flutter. I love crafting intuitive
@@ -49,13 +49,13 @@ const Home = () => {
       <WorksWrapper />
 
       <footer id="contact" className="p-(--padding) shapedividers_com-6349">
-        <h2
+        <h1
           data-aos="fade-up"
           data-aos-duration="2000"
           className="text-8xl max-[992px]:text-5xl text-wrap mb-10 text-center font-medium"
         >
           LET'S BUILD SOMETHING TOGETHER
-        </h2>
+        </h1>
         <div className="flex justify-center mb-10  items-center gap-3">
           <button className="bg-(--accent-color) rounded-[10px]  px-[1.2rem] py-2 hover:scale-105 transition duration-200">
             <a

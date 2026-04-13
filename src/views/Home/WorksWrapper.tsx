@@ -43,7 +43,7 @@ const WorksWrapper = () => {
 
   return (
     <div className="work_section p-(--padding) bg-gray-100 shapedividers_com-9634">
-      <h2 className="mb-6 text-6xl max-[992px]:text-5xl font-medium text-center">
+      <h2 className="mb-8 text-6xl max-[992px]:text-5xl font-medium text-center">
         MY WORKS
       </h2>
       <div className="works_wrapper max-[992px]:space-y-8  min-[992px]:grid min-[992px]:grid-cols-2 gap-8">
@@ -74,9 +74,7 @@ const WorksWrapper = () => {
       </div>
 
       <article className="mt-(--padding)">
-        <h2 className="mb-8 text-6xl max-[992px]:text-5xl font-medium text-center">
-          SKILLS AND TECHNOLOGIES
-        </h2>
+        <h2 className="mb-8 font-medium text-center">SKILLS & TOOLS</h2>
         <section className="logos_section">
           <div className="slider">
             {skillsLogos.map((item, index) => (
