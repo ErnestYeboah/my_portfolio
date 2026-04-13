@@ -17,11 +17,17 @@ const WorkCard = ({
 }: WorkCardProps) => {
   const videoRef = useRef<HTMLVideoElement>(null);
 
-  function playVideo() {
+  async function playVideo() {
     const video = videoRef.current;
     if (!video) return;
 
-    void video.play();
+    try {
+      await video.play();
+    } catch (error) {
+      // Ignore the expected rejection when a pending play is interrupted.
+      if (error instanceof DOMException && error.name === "AbortError") return;
+      console.error("Video playback failed:", error);
+    }
   }
 
   function pauseVideo() {
@@ -32,6 +38,24 @@ const WorkCard = ({
     video.currentTime = 0;
   }
 
+  async function toggleVideo() {
+    const video = videoRef.current;
+    if (!video) return;
+
+    if (video.paused) {
+      try {
+        await video.play();
+      } catch (error) {
+        if (error instanceof DOMException && error.name === "AbortError")
+          return;
+        console.error("Video playback failed:", error);
+      }
+      return;
+    }
+
+    pauseVideo();
+  }
+
   return (
     <div
       className={`h-min-[75vh] rounded-2xl shadow ${padding || ""}  bg-white`}
@@ -40,8 +64,10 @@ const WorkCard = ({
         ref={videoRef}
         onMouseEnter={playVideo}
         onMouseLeave={pauseVideo}
+        onClick={toggleVideo}
         muted
         playsInline
+        preload="metadata"
         className={` h-[60vh] w-full ${fit} video  rounded-t-(--radius) `}
         src={video_url || "/videos/store_video.mp4"}
       ></video>
