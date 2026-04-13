@@ -29,7 +29,7 @@ const SocialLinks = () => {
         className="social_link"
         target="_blank"
         rel="noopener noreferrer"
-        href="https://www.linkedin.com/in/ernest-kwame-yeboah-93303b304?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+        href="www.linkedin.com/in/ernest-kwame-yeboah-93303b304"
       >
         <FaLinkedinIn className="icon" /> LinkedIn
       </a>
