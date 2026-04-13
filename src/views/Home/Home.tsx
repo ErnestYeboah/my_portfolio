@@ -47,6 +47,7 @@ const Home = () => {
         <SocialLinks />
       </div>
       <WorksWrapper />
+
       <footer id="contact" className="p-(--padding) shapedividers_com-6349">
         <h2
           data-aos="fade-up"

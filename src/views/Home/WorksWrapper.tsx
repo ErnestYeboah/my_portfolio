@@ -26,6 +26,21 @@ const WorksWrapper = () => {
     "Problem Solving",
   ];
 
+  const skillsLogos = [
+    "html.png",
+    "CSS-Logo.png",
+    "tailwind.png",
+    "JavaScript-Logo.png",
+    "react.png",
+    "vue.png",
+    "sql.png",
+    "typescript.png",
+    "flutter.png",
+    "dart.png",
+    "django.png",
+    "figma.png",
+  ];
+
   return (
     <div className="work_section p-(--padding) bg-gray-100 shapedividers_com-9634">
       <h2 className="mb-6 text-6xl max-[992px]:text-5xl font-medium text-center">
@@ -57,6 +72,28 @@ const WorksWrapper = () => {
           padding="pt-4"
         />
       </div>
+
+      <article className="mt-(--padding)">
+        <h2 className="mb-8 text-6xl max-[992px]:text-5xl font-medium text-center">
+          SKILLS AND TECHNOLOGIES
+        </h2>
+        <section className="logos_section">
+          <div className="slider">
+            {skillsLogos.map((item, index) => (
+              <figure className="logo_figure" key={index}>
+                <img src={`/images/logos/${item}`} alt={`${item}`} />
+              </figure>
+            ))}
+          </div>
+          <div className="slider">
+            {skillsLogos.map((item, index) => (
+              <figure className="logo_figure" key={index}>
+                <img src={`/images/logos/${item}`} alt={`${item}`} />
+              </figure>
+            ))}
+          </div>
+        </section>
+      </article>
     </div>
   );
 };
