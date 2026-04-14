@@ -52,7 +52,7 @@ const Home = () => {
         <h1
           data-aos="fade-up"
           data-aos-duration="2000"
-          className="text-8xl max-[992px]:text-5xl text-wrap mb-10 text-center font-medium"
+          className="text-7xl max-[992px]:text-4xl text-wrap mb-10 text-center font-medium"
         >
           LET'S BUILD SOMETHING TOGETHER
         </h1>

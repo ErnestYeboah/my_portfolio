@@ -82,8 +82,6 @@
   background-color: var(--alt-primary-color);
   position: relative;
 
-  min-width: fit-content;
-
   &::before,
   &::after {
     content: "";
@@ -109,8 +107,12 @@
   justify-content: space-between;
   gap: 10px;
   align-items: center;
-  animation: slideshow linear 10000ms infinite;
+  animation: slideshow linear 50000ms infinite;
   padding-inline-start: 50px;
+
+  @media (width < 992px) {
+    min-width: fit-content;
+  }
 }
 
 @keyframes slideshow {
@@ -130,6 +132,7 @@
 
     @media (width < 992px) {
       max-width: fit-content;
+      margin-inline: 30px;
     }
   }
 }
