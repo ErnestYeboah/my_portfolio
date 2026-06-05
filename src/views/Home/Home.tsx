@@ -31,7 +31,7 @@ const Home = () => {
       <div className="hero_section">
         <div>
           <h1 className="text-4xl max-[992px]:text-center font-medium my-4 ">
-            FULLSTACK DEVELOPER & <br />{" "}
+            FRONTEND DEVELOPER & <br />{" "}
             <span className="title_span">MOBILE DEVELOPER</span>
           </h1>
           <p>

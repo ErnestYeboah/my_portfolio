@@ -35,7 +35,7 @@ const About = () => {
               data-aos-delay="400"
               className="flex flex-wrap gap-2"
             >
-              <p className="about_chip">Fullstack Developer</p>
+              <p className="about_chip">Frontend Developer</p>
               <p className="about_chip">Mobile Developer</p>
               <p className="about_chip">React & Vue</p>
               <p className="about_chip">Flutter</p>
