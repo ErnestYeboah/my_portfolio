@@ -71,7 +71,7 @@ const Home = () => {
             <a
               rel="noopener noreferrer"
               target="_blank"
-              href="/images/Ernest Yeboah Resume.pdf"
+              href="/images/Ernest_Yeboah_Resume.pdf"
               className="text-center   flex items-center gap-2 "
             >
               <FaFilePdf className="text-red-500" /> View My Resume
