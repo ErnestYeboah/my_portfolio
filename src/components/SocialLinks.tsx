@@ -12,6 +12,7 @@ const SocialLinks = () => {
       <a
         className="social_link"
         rel="noopener noreferrer"
+	target="_blank"
         href="https://web.facebook.com/people/Ernest-Yeboah/pfbid04UudmeQN7w1tYb63DCwmzspcLsP5DemXggA5EUT7se2VyfXqCi3ebde1B8V49RJDl/"
       >
         <FaFacebookF className="icon" />
@@ -20,6 +21,7 @@ const SocialLinks = () => {
       <a
         className="social_link"
         rel="noopener noreferrer"
+	target="_blank"
         href="mailto:yeboahernest246@gmail.com"
       >
         <BiLogoGmail className="icon" />
@@ -29,7 +31,7 @@ const SocialLinks = () => {
         className="social_link"
         target="_blank"
         rel="noopener noreferrer"
-        href="www.linkedin.com/in/ernest-kwame-yeboah-93303b304"
+        href="https://linkedin.com/in/ernest-kwame-yeboah-93303b304"
       >
         <FaLinkedinIn className="icon" /> LinkedIn
       </a>
